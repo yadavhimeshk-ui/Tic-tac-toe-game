@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h1>Welcome to Tic-Tac-Toe Game</h1>
+        <form id="login-form">
+            <label for="email">Enter your email to login:</label>
+            <input type="email" id="email" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <div id="game-container" style="display: none;">
+        <h1>Tic-Tac-Toe Game</h1>
+        <p id="turn-indicator">Player X's turn</p>
+        <div id="scores">
+            <p>Player X Wins: <span id="x-wins">0</span></p>
+            <p>Player O Wins: <span id="o-wins">0</span></p>
+            <p>Draws: <span id="draws">0</span></p>
+        </div>
+        <div id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button id="reset-btn">Reset Game</button>
+        <button id="logout-btn">Logout</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
